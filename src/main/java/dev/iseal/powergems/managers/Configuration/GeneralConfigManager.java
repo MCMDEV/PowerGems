@@ -162,7 +162,7 @@ public class GeneralConfigManager extends AbstractConfigManager {
     }
 
     public int getGemFirstLoginLevel() {
-        return file.getInteger("gemFirstLoginLevel");
+        return file.getInt("gemFirstLoginLevel");
     }
 
     public boolean giveGemPermanentEffectOnLvlX() {
