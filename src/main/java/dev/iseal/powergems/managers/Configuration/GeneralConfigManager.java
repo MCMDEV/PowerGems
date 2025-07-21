@@ -42,6 +42,7 @@ public class GeneralConfigManager extends AbstractConfigManager {
         file.setDefault("gemCreationAttempts", 10);
         file.setDefault("gemsHaveDescriptions", true);
         file.setDefault("giveGemOnFirstLogin", true);
+        file.setDefault("gemFirstLoginLevel", 1);
         file.setDefault("unlockNewAbilitiesOnLevelX", 3);
         file.setDefault("giveGemPermanentEffectOnLevelX", true);
         file.setDefault("unlockShiftAbilityOnLevelX", false);
@@ -158,6 +159,10 @@ public class GeneralConfigManager extends AbstractConfigManager {
 
     public boolean getGiveGemOnFirstLogin() {
         return file.getBoolean("giveGemOnFirstLogin");
+    }
+
+    public int getGemFirstLoginLevel() {
+        return file.getInteger("gemFirstLoginLevel");
     }
 
     public boolean giveGemPermanentEffectOnLvlX() {
