@@ -7,6 +7,7 @@ import java.util.UUID;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import de.mcmdev.gemsmp.GemExchangeItem;
 import dev.iseal.powergems.managers.Addons.WorldGuard.WorldGuardAddonManager;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
@@ -151,6 +152,9 @@ public class PowerGems extends JavaPlugin {
         }
         //pluginManager.registerEvents(sm.metricsManager, this);
         l.info(I18N.translate("INITIALIZED_PLUGIN"));
+
+        // GemSMP Fork stuff
+        new GemExchangeItem().init();
     }
 
     @Override
